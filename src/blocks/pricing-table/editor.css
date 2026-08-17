@@ -1,0 +1,19 @@
+.microsaas-pricing-section {
+  border: 1px dashed #CBD5E1;
+  border-radius: 12px;
+}
+
+.microsaas-remove-feature-btn {
+  background: transparent;
+  border: none;
+  color: #EF4444;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0 4px;
+  line-height: 1;
+  margin-left: auto;
+  opacity: 0.6;
+}
+.microsaas-remove-feature-btn:hover {
+  opacity: 1;
+}

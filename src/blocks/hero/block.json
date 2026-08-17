@@ -1,0 +1,76 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "microsaas/hero",
+  "version": "1.0.0",
+  "title": "Hero Section (Microsaas)",
+  "category": "microsaas",
+  "icon": "superhero-alt",
+  "description": "Seção Hero de alta conversão para produtos SaaS com títulos dinâmicos, CTAs duplos e mockup.",
+  "keywords": ["hero", "saas", "header", "banner", "conversao"],
+  "supports": {
+    "align": ["wide", "full"],
+    "color": {
+      "background": true,
+      "text": true,
+      "gradients": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Acelere o crescimento do seu negócio com IA e automação"
+    },
+    "subtitle": {
+      "type": "string",
+      "default": "Gerencie operações, automatize fluxos repetitivos e aumente sua receita recorrente em minutos com a nossa plataforma integrada."
+    },
+    "badgeText": {
+      "type": "string",
+      "default": "🚀 Versão 2.0 Lançada com Novas Automações"
+    },
+    "showBadge": {
+      "type": "boolean",
+      "default": true
+    },
+    "primaryBtnText": {
+      "type": "string",
+      "default": "Começar Teste Grátis"
+    },
+    "primaryBtnUrl": {
+      "type": "string",
+      "default": "#signup"
+    },
+    "secondaryBtnText": {
+      "type": "string",
+      "default": "Ver Demonstração"
+    },
+    "secondaryBtnUrl": {
+      "type": "string",
+      "default": "#demo"
+    },
+    "layout": {
+      "type": "string",
+      "default": "split-right"
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "imageAlt": {
+      "type": "string",
+      "default": "Interface do Micro-SaaS"
+    },
+    "subtext": {
+      "type": "string",
+      "default": "✓ 14 dias de teste grátis   •   ✓ Sem cartão de crédito   •   ✓ Instalação em 2 minutos"
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

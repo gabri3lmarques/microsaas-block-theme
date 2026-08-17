@@ -1,0 +1,84 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "microsaas/features-grid",
+  "version": "1.0.0",
+  "title": "Grid de Funcionalidades (Microsaas)",
+  "category": "microsaas",
+  "icon": "grid-view",
+  "description": "Grid moderno e responsivo para exibir recursos, diferenciais e funcionalidades do SaaS com ícones personalizáveis.",
+  "keywords": ["features", "recursos", "grid", "saas", "funcionalidades"],
+  "supports": {
+    "align": ["wide", "full"],
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Tudo o que você precisa para crescer e escalar"
+    },
+    "subtitle": {
+      "type": "string",
+      "default": "Desenvolvido do zero para alta performance, facilidade de uso e integração perfeita com suas ferramentas diárias."
+    },
+    "badge": {
+      "type": "string",
+      "default": "FUNCIONALIDADES PODEROSAS"
+    },
+    "columns": {
+      "type": "number",
+      "default": 3
+    },
+    "features": {
+      "type": "array",
+      "default": [
+        {
+          "id": "f1",
+          "icon": "zap",
+          "title": "Velocidade Extrema",
+          "description": "Arquitetura otimizada para carregar seus dados em milissegundos sem lentidão."
+        },
+        {
+          "id": "f2",
+          "icon": "shield",
+          "title": "Segurança de Nível Bancário",
+          "description": "Criptografia ponta a ponta, backups diários automáticos e total conformidade com a LGPD."
+        },
+        {
+          "id": "f3",
+          "icon": "chart",
+          "title": "Analytics & Métricas em Tempo Real",
+          "description": "Acompanhe conversão, churn, MRR e engajamento dos seus usuários em dashboards claros."
+        },
+        {
+          "id": "f4",
+          "icon": "users",
+          "title": "Gestão e Acessos de Equipe",
+          "description": "Convide membros do seu time com controle granular de permissões e papéis."
+        },
+        {
+          "id": "f5",
+          "icon": "cloud",
+          "title": "Infraestrutura em Nuvem Global",
+          "description": "Disponibilidade de 99.9% com servidores distribuídos estrategicamente pelo mundo."
+        },
+        {
+          "id": "f6",
+          "icon": "code",
+          "title": "API Aberta & Webhooks",
+          "description": "Integre facilmente com Zapier, Stripe, Slack, WhatsApp e seu próprio backend."
+        }
+      ]
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

@@ -1,0 +1,123 @@
+.microsaas-features-section {
+  padding: 5rem 1.5rem 6rem;
+  background: #FFFFFF;
+  position: relative;
+}
+
+.microsaas-features-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.microsaas-features-header {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 3.5rem;
+}
+
+.microsaas-features-title {
+  font-family: 'Plus Jakarta Sans', Inter, -apple-system, sans-serif;
+  font-size: clamp(2rem, 1.6rem + 1.8vw, 2.75rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #0F172A;
+  margin: 0 0 1rem;
+  line-height: 1.2;
+}
+
+.microsaas-features-subtitle {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #64748B;
+  margin: 0;
+}
+
+.microsaas-features-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.microsaas-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.microsaas-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.microsaas-grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Feature Card */
+.microsaas-feature-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 2.25rem 2rem;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.microsaas-feature-card:hover {
+  transform: translateY(-4px);
+  border-color: #CBD5E1;
+  box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.07), 0 8px 10px -6px rgba(15, 23, 42, 0.03);
+}
+
+.microsaas-feature-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.microsaas-feature-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #EEF2FF;
+  color: #4F46E5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.microsaas-feature-card:hover .microsaas-feature-card__icon {
+  background: #4F46E5;
+  color: #FFFFFF;
+  transform: scale(1.05);
+}
+
+.microsaas-feature-card__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0F172A;
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.microsaas-feature-card__desc {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #64748B;
+  margin: 0;
+}
+
+@media (max-width: 960px) {
+  .microsaas-grid-3,
+  .microsaas-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .microsaas-grid-2,
+  .microsaas-grid-3,
+  .microsaas-grid-4 {
+    grid-template-columns: 1fr;
+  }
+}

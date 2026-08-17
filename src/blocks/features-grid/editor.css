@@ -1,0 +1,18 @@
+.microsaas-features-section {
+  border: 1px dashed #CBD5E1;
+  border-radius: 12px;
+}
+
+.microsaas-remove-feature-card-btn {
+  background: transparent;
+  border: none;
+  color: #EF4444;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0 4px;
+  line-height: 1;
+  opacity: 0.6;
+}
+.microsaas-remove-feature-card-btn:hover {
+  opacity: 1;
+}

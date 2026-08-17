@@ -1,0 +1,100 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "microsaas/pricing-table",
+  "version": "1.0.0",
+  "title": "Tabela de Preços (Microsaas)",
+  "category": "microsaas",
+  "icon": "money-alt",
+  "description": "Tabela de planos e preços de alta conversão com destaque para o plano mais popular e lista de recursos.",
+  "keywords": ["preço", "planos", "pricing", "saas", "tabela"],
+  "supports": {
+    "align": ["wide", "full"],
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Planos simples e transparentes para sua operação"
+    },
+    "subtitle": {
+      "type": "string",
+      "default": "Comece gratuitamente e faça upgrade conforme o seu produto escala. Sem taxas ocultas."
+    },
+    "badge": {
+      "type": "string",
+      "default": "PREÇOS ACESSÍVEIS"
+    },
+    "plans": {
+      "type": "array",
+      "default": [
+        {
+          "id": "starter",
+          "name": "Starter",
+          "price": "R$ 49",
+          "period": "/mês",
+          "description": "Ideal para validar ideias e projetos individuais em estágio inicial.",
+          "features": [
+            "1 Projeto ativo",
+            "Até 1.000 usuários/mês",
+            "Relatórios básicos em tempo real",
+            "Suporte via e-mail em até 24h",
+            "Certificado SSL grátis incluso"
+          ],
+          "buttonText": "Começar Teste Grátis",
+          "buttonUrl": "#signup-starter",
+          "isFeatured": false,
+          "badgeText": ""
+        },
+        {
+          "id": "pro",
+          "name": "Profissional",
+          "price": "R$ 129",
+          "period": "/mês",
+          "description": "Perfeito para startups em crescimento que precisam de automação e escala.",
+          "features": [
+            "Projetos ilimitados",
+            "Até 50.000 usuários/mês",
+            "Relatórios avançados com IA",
+            "Suporte prioritário 24/7",
+            "Domínio customizado",
+            "Acesso completo à API & Webhooks"
+          ],
+          "buttonText": "Assinar Plano Pro",
+          "buttonUrl": "#signup-pro",
+          "isFeatured": true,
+          "badgeText": "MAIS POPULAR"
+        },
+        {
+          "id": "enterprise",
+          "name": "Enterprise",
+          "price": "R$ 399",
+          "period": "/mês",
+          "description": "Soluções corporativas completas para operações que exigem SLA e segurança.",
+          "features": [
+            "Tudo do plano Profissional",
+            "Usuários e acessos ilimitados",
+            "Gerente de conta dedicado",
+            "SLA de 99.9% garantido em contrato",
+            "Segurança avançada SOC2 & SSO",
+            "Onboarding assistido por engenheiro"
+          ],
+          "buttonText": "Falar com Consultor",
+          "buttonUrl": "#contact-sales",
+          "isFeatured": false,
+          "badgeText": ""
+        }
+      ]
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

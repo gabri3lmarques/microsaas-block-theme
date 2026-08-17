@@ -1,0 +1,13 @@
+.microsaas-hero {
+  border: 1px dashed #CBD5E1;
+  border-radius: 12px;
+}
+
+.microsaas-hero .microsaas-btn {
+  pointer-events: auto;
+}
+
+.microsaas-hero .rich-text:focus {
+  outline: 2px solid #4F46E5 !important;
+  border-radius: 4px;
+}

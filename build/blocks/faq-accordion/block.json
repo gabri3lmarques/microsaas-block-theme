@@ -1,0 +1,79 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "microsaas/faq-accordion",
+  "version": "1.0.0",
+  "title": "Accordion de FAQ (Microsaas)",
+  "category": "microsaas",
+  "icon": "editor-help",
+  "description": "Seção de Perguntas Frequentes em formato Accordion interativo, fluido e acessível.",
+  "keywords": [
+    "faq",
+    "perguntas",
+    "accordion",
+    "respostas",
+    "duvidas"
+  ],
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Perguntas Frequentes"
+    },
+    "subtitle": {
+      "type": "string",
+      "default": "Tudo o que você precisa saber sobre o produto, cobrança, segurança e suporte."
+    },
+    "badge": {
+      "type": "string",
+      "default": "TIRA-DÚVIDAS"
+    },
+    "items": {
+      "type": "array",
+      "default": [
+        {
+          "id": "faq-1",
+          "question": "Como funciona o período de teste gratuito?",
+          "answer": "Você tem 14 dias de acesso completo a todas as funcionalidades do plano Pro, sem necessidade de cadastrar cartão de crédito. Se optar por continuar após os 14 dias, basta escolher o plano desejado."
+        },
+        {
+          "id": "faq-2",
+          "question": "Posso cancelar ou alterar meu plano a qualquer momento?",
+          "answer": "Sim! Você tem total liberdade. Não há fidelidade ou taxas de cancelamento. Você pode fazer upgrade, downgrade ou cancelamento diretamente no painel de configurações a qualquer instante."
+        },
+        {
+          "id": "faq-3",
+          "question": "Quais são as formas de pagamento aceitas?",
+          "answer": "Aceitamos os principais cartões de crédito (Visa, Mastercard, Elo, Hipercard, Amex), Pix com compensação imediata e boleto bancário para contratos anuais."
+        },
+        {
+          "id": "faq-4",
+          "question": "Meus dados e de meus clientes estão seguros?",
+          "answer": "Com certeza. Nossos servidores utilizam infraestrutura em nuvem de ponta com criptografia SSL/TLS de 256 bits, backups diários automáticos redundantes e conformidade com a LGPD e GDPR."
+        },
+        {
+          "id": "faq-5",
+          "question": "Como funciona o suporte técnico e atendimento?",
+          "answer": "Nosso time de suporte está disponível via chat ao vivo e e-mail de segunda a sexta das 8h às 20h. Usuários dos planos Pro e Enterprise contam com suporte prioritário com tempo de resposta em menos de 15 minutos."
+        }
+      ]
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

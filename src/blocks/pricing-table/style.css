@@ -1,0 +1,240 @@
+.microsaas-pricing-section {
+  padding: 5rem 1.5rem 6rem;
+  background: #F8FAFC;
+  position: relative;
+}
+
+.microsaas-pricing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.microsaas-pricing-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 4rem;
+}
+
+.microsaas-section-badge {
+  display: inline-block;
+  padding: 0.3rem 0.85rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #4F46E5;
+  background: #EEF2FF;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+}
+
+.microsaas-pricing-title {
+  font-family: 'Plus Jakarta Sans', Inter, -apple-system, sans-serif;
+  font-size: clamp(2rem, 1.6rem + 1.8vw, 2.75rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #0F172A;
+  margin: 0 0 1rem;
+  line-height: 1.2;
+}
+
+.microsaas-pricing-subtitle {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #64748B;
+  margin: 0;
+}
+
+.microsaas-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: stretch;
+}
+
+/* Base Price Card */
+.microsaas-price-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03), 0 2px 4px -2px rgba(0, 0, 0, 0.03);
+}
+
+.microsaas-price-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.08);
+}
+
+/* Featured Price Card */
+.microsaas-price-card.is-featured {
+  border: 2px solid #4F46E5;
+  box-shadow: 0 20px 35px -10px rgba(79, 70, 229, 0.22);
+  transform: scale(1.03);
+  z-index: 2;
+}
+.microsaas-price-card.is-featured:hover {
+  transform: scale(1.03) translateY(-4px);
+}
+
+.microsaas-price-card__popular-tag {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #4F46E5;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 0.35rem 1.25rem;
+  border-radius: 9999px;
+  box-shadow: 0 4px 10px rgba(79, 70, 229, 0.3);
+  white-space: nowrap;
+}
+
+.microsaas-price-card__header {
+  margin-bottom: 2rem;
+}
+
+.microsaas-price-card__name {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0F172A;
+  margin: 0 0 1rem;
+}
+
+.microsaas-price-card__pricing {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.microsaas-price-card__amount {
+  font-family: 'Plus Jakarta Sans', Inter, sans-serif;
+  font-size: 2.75rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #0F172A;
+  line-height: 1;
+}
+
+.microsaas-price-card__period {
+  font-size: 1rem;
+  color: #64748B;
+  font-weight: 500;
+}
+
+.microsaas-price-card__desc {
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: #64748B;
+  margin: 0;
+}
+
+.microsaas-price-card__features {
+  flex: 1;
+  border-top: 1px solid #F1F5F9;
+  padding-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.microsaas-price-card__features-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #94A3B8;
+  margin-bottom: 1rem;
+}
+
+.microsaas-price-card__features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.microsaas-price-card__features li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9375rem;
+  color: #334155;
+  line-height: 1.4;
+}
+
+.microsaas-check-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  border-radius: 50%;
+  background: #EEF2FF;
+  color: #4F46E5;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.microsaas-price-card.is-featured .microsaas-check-icon {
+  background: #4F46E5;
+  color: #FFFFFF;
+}
+
+.microsaas-pricing-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.875rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  background: #FFFFFF;
+  color: #0F172A !important;
+  border: 1px solid #CBD5E1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.microsaas-pricing-btn:hover {
+  background: #F8FAFC;
+  border-color: #94A3B8;
+  transform: translateY(-2px);
+}
+
+.microsaas-pricing-btn.is-featured-btn {
+  background: #4F46E5;
+  color: #FFFFFF !important;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35);
+}
+
+.microsaas-pricing-btn.is-featured-btn:hover {
+  background: #4338CA;
+  box-shadow: 0 6px 20px rgba(79, 70, 229, 0.45);
+}
+
+@media (max-width: 960px) {
+  .microsaas-pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .microsaas-price-card.is-featured {
+    transform: none;
+  }
+  .microsaas-price-card.is-featured:hover {
+    transform: translateY(-4px);
+  }
+}

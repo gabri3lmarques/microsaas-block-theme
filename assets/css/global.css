@@ -1,0 +1,44 @@
+/**
+ * Microsaas Global Styles & Micro-interactions
+ */
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure focus states are accessible and attractive */
+:focus-visible {
+  outline: 2px solid var(--wp--preset--color--primary, #4f46e5);
+  outline-offset: 2px;
+}
+
+/* Fluid responsive media */
+img, svg, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Button hover transitions */
+.wp-element-button,
+.wp-block-button__link {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.wp-element-button:hover,
+.wp-block-button__link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(79, 70, 229, 0.25);
+}
+
+/* Subtle card hover elevation */
+.microsaas-card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.microsaas-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 30px -10px rgba(15, 23, 42, 0.08);
+}
